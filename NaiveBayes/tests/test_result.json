@@ -1,0 +1,15 @@
+{
+    "test_imports": true,
+    "test_setup": true,
+    "test_tiny_dataset_a": true,
+    "test_tiny_dataset_b": true,
+    "test_smoothing": true,
+    "test_without_em": true,
+    "test_em_initialization": true,
+    "test_em_likelihood_always_increases": true,
+    "test_comparison_naive_bayes": true,
+    "test_scipy_sparse_to_numpy": true,
+    "test_scipy_sparse_multiplication": true,
+    "test_softmax": true,
+    "test_stable_log_sum": true
+}

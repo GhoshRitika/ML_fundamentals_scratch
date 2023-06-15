@@ -1,0 +1,94 @@
+{
+    "test_setup": {
+        "weight": "required",
+        "depends": []
+    },
+    "test_imports": {
+        "weight": "required",
+        "depends": []
+    },
+
+    "test_metrics": {
+        "weight": 2,
+        "depends": [
+            "test_imports",
+            "test_setup"
+        ]
+    },
+    "test_cross_validation": {
+        "weight": 1,
+        "depends": [
+            "test_imports",
+            "test_setup"
+        ]
+    },
+    "test_polynomial_transform": {
+        "weight": 1,
+        "depends": [
+            "test_imports",
+            "test_setup"
+        ]
+    },
+
+    "test_perceptron": {
+        "weight": 3,
+        "depends": [
+            "test_imports",
+            "test_setup",
+            "test_metrics"
+        ]
+    },
+    "test_polynomial_perceptron": {
+        "weight": 1,
+        "depends": [
+            "test_imports",
+            "test_setup",
+            "test_metrics",
+            "test_perceptron"
+        ]
+    },
+    "test_logistic_regression": {
+        "weight": 3,
+        "depends": [
+            "test_imports",
+            "test_setup",
+            "test_metrics"
+        ]
+    },
+    "test_polynomial_logreg": {
+        "weight": 1,
+        "depends": [
+            "test_imports",
+            "test_setup",
+            "test_metrics",
+            "test_logistic_regression"
+        ]
+    },
+
+    "test_custom_transform_easy": {
+        "weight": 2,
+        "depends": [
+            "test_imports",
+            "test_setup",
+            "test_logistic_regression"
+        ]
+    },
+    "test_custom_transform_hard": {
+        "weight": 1,
+        "depends": [
+            "test_imports",
+            "test_setup",
+            "test_custom_transform_easy",
+            "test_logistic_regression"
+        ]
+    },
+    "test_convergence": {
+        "weight": 2,
+        "depends": [
+            "test_imports",
+            "test_setup",
+            "test_logistic_regression",
+            "test_perceptron"
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "score": 100,
+    "tests_passed": 13,
+    "notes": {
+        "test_tiny_dataset_a": "PASS:",
+        "test_tiny_dataset_b": "PASS:",
+        "test_smoothing": "PASS:",
+        "test_without_em": "PASS:",
+        "test_em_initialization": "PASS:",
+        "test_em_likelihood_always_increases": "PASS:",
+        "test_comparison_naive_bayes": "PASS:",
+        "test_scipy_sparse_to_numpy": "PASS:",
+        "test_scipy_sparse_multiplication": "PASS:",
+        "test_softmax": "PASS:",
+        "test_stable_log_sum": "PASS:"
+    }
+}

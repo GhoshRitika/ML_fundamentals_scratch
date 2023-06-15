@@ -1,0 +1,10 @@
+#for completing assignment
+numpy
+scipy
+pandas
+matplotlib
+
+#for running test cases only:
+filetype
+pytest
+sklearn

@@ -1,0 +1,8 @@
+#for completing assignment
+numpy
+pandas
+filetype
+
+#for running test cases only:
+pytest
+sklearn
